@@ -1,9 +1,14 @@
 def menu_1():
-    print('Hello, world')
-    print('Python Programming')
+    with open ('words_1.txt', 'r') as file:
+        count = 0
+        words = file.readlines()
+        for word in words:
+            if len(word.strip('\n')) <= 10:
+                count += 1
+        print(count)
 
 def menu_2():
-    print('Hello, world!\n'*2)
+    pass
 
 if __name__ == "__main__":
     while True:
