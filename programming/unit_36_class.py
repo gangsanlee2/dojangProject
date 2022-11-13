@@ -15,10 +15,9 @@ def menu_2():
     class Wing:
         def flap(self):
             print('파닥거리다')
+    class Bird(Animal,Wing):
         def fly(self):
             print('날다')
-    class Bird():
-        pass
 
     b = Bird()
     b.eat()
