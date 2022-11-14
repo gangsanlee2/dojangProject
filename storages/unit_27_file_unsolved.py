@@ -8,7 +8,9 @@ def menu_1():
         print(count)
 
 def menu_2():
-    pass
+    with open ('words_2.txt','r') as file:
+        for word in file:
+            print(word.strip(',','.'))
 
 if __name__ == "__main__":
     while True:
