@@ -1,9 +1,10 @@
 def menu_1():
-    print('Hello, world')
-    print('Python Programming')
+    a = list(range(5,-10,-2))
+    print(a)
 
 def menu_2():
-    print('Hello, world!\n'*2)
+    a = tuple(range(-10,9,3))
+    print(a)
 
 if __name__ == "__main__":
     while True:

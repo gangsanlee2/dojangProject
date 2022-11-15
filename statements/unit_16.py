@@ -1,9 +1,12 @@
 def menu_1():
-    print('Hello, world')
-    print('Python Programming')
+    x = [49, -17, 25, 102, 8, 62, 21]
+    for i in x:
+        print(i*10,end=' ')
 
 def menu_2():
-    print('Hello, world!\n'*2)
+    x = int(input())
+    for i in range(1,10):
+        print(f'{x} * {i} = {x*i}')
 
 if __name__ == "__main__":
     while True:

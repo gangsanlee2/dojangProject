@@ -1,9 +1,28 @@
 def menu_1():
-    print('Hello, world')
-    print('Python Programming')
+    i = 0
+    while True:
+        if i % 10 != 3:
+            i += 1
+            continue
+        if i > 73:
+            break
+        print(i, end=' ')
+        i += 1
 
 def menu_2():
-    print('Hello, world!\n'*2)
+    start, stop = map(int, input().split())
+
+    i = start
+
+    while True:
+        if i % 10 == 3 and i < stop:
+            i += 1
+            continue
+        if i < stop:
+            break
+        print(i, end=' ')
+        i += 1
+
 
 if __name__ == "__main__":
     while True:

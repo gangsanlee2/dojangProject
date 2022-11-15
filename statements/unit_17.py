@@ -1,9 +1,18 @@
 def menu_1():
-    print('Hello, world')
-    print('Python Programming')
+    i = 2
+    j = 5
+    while i <= 32 or j >= 1:
+        print(i,j)
+        i *= 2
+        j -= 1
 
 def menu_2():
-    print('Hello, world!\n'*2)
+    x = int(input())
+    while x >= 1350:
+        x -= 1350
+        print(x)
+        if x < 0:
+            break
 
 if __name__ == "__main__":
     while True:

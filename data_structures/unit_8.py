@@ -1,9 +1,13 @@
 def menu_1():
-    print('Hello, world')
-    print('Python Programming')
+    kor = 92
+    eng = 47
+    math = 86
+    sci = 81
+    print(kor >= 50 and eng >= 50 and math >= 50 and sci >= 50)
 
 def menu_2():
-    print('Hello, world!\n'*2)
+    kor, eng, math, sci = input().split()
+    print(int(kor) >= 90 and int(eng) > 80 and int(math) > 85 and int(sci) >= 80)
 
 if __name__ == "__main__":
     while True:

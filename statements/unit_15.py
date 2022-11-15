@@ -1,10 +1,24 @@
 def menu_1():
-    print('Hello, world')
-    print('Python Programming')
+    x = int(input())
+    if 11 <= x <= 20:
+        print('11~20')
+    elif 21 <= x <= 30:
+        print('21~30')
+    else:
+        print('passt nichts')
 
 def menu_2():
-    print('Hello, world!\n'*2)
-
+    age = int(input())
+    balance = 9000
+    if age >=19:
+        balance -= 1250
+    elif 13 <= age <= 18:
+        balance -= 1050
+    elif 7 <= age <= 12:
+        balance -= 650
+    else:
+        print('falsch')
+    print(balance)
 if __name__ == "__main__":
     while True:
         print("*" * 20)

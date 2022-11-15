@@ -1,10 +1,14 @@
 def menu_1():
-    print('Hello, world')
-    print('Python Programming')
+    s = '''가나다라마바사아자차카타파하
+abcdefghijklmnopopqrstuvwxyz'''
+    print(s)
 
 def menu_2():
-    print('Hello, world!\n'*2)
-
+    s = '''
+'가나다라마바사아자차카타파하'
+"abcdefghijklmnopopqrstuvwxyz"
+'''
+    print(s)
 if __name__ == "__main__":
     while True:
         print("*" * 20)

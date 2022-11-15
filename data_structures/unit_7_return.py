@@ -1,9 +1,18 @@
 def menu_1():
-    print('Hello, world')
-    print('Python Programming')
+    year = 2000
+    month = 10
+    day = 27
+    hour = 11
+    minute = 43
+    second = 59
+
+    print(year, month, day, sep='/',end=' ')
+    print(hour, minute, second, sep=':')
 
 def menu_2():
-    print('Hello, world!\n'*2)
+    year, month, day, hour, minute, second = input().split()
+    print(year, month, day, sep='-', end='T')
+    print(hour, minute, second, sep=':')
 
 if __name__ == "__main__":
     while True:
@@ -22,4 +31,3 @@ if __name__ == "__main__":
             menu_2()
         else:
             print(" wrong menu ")
-
